@@ -1,0 +1,34 @@
+# Python / IDE
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Private config, logs and local results
+.env
+.env.*
+!.env.example
+*.log
+data/outputs/*
+!data/outputs/.gitkeep
+data/images/*
+!data/images/README.md
+*.pt
+*.onnx
+*.engine
+*.tflite
+runs/
+
+# OS
+.DS_Store
+Thumbs.db
