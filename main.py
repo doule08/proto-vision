@@ -73,8 +73,8 @@ try:
                 class_id = int(box.cls[0])
                 class_name = result.names[class_id]
 
-                if class_name != "apple":
-                    continue
+                if class_name != "apple" and class_name != "keyboard" and class_name != 'mouse':
+                    continue"""  """
 
                 x1, y1, x2, y2 = map(int, box.xyxy[0].tolist())
 
@@ -82,7 +82,7 @@ try:
 
                 cv2.putText(
                     output,
-                    "Pomme",
+                    "Pomme","""  """
                     (x1, max(25, y1 - 10)),
                     cv2.FONT_HERSHEY_SIMPLEX,
                     0.7,
@@ -119,5 +119,5 @@ try:
             break
 
 finally:
-    cap.release()
+    cap.release()"""  """
     cv2.destroyAllWindows()
